@@ -15,11 +15,14 @@ public class Test2 {
 		
 		driver.navigate().to("https://duckduckgo.com/");  
 		
-		driver.findElement(By.id("search_form_input_homepage")).sendKeys("javatpoint tutorials");  
+		driver.findElement(By.id("search_form_input_homepage")).sendKeys("progress software");  
 		
 		driver.findElement(By.id("search_form_input_homepage")).submit(); 
 		
+		System.out.println(driver.getCurrentUrl()+"\n"+driver.getTitle());
+		System.out.println(driver.getCurrentUrl().length()+"\n"+driver.getTitle().length());
 		
+		driver.close();  
 
 	}
 
